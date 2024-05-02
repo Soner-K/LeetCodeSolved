@@ -19,7 +19,7 @@ void	move_shortest(char **strs, int strsSize)
 	strs[0] = strs[min_index];
 	strs[min_index] = tmp;
 }
-
+ 
 char	*longestCommonPrefix(char **strs, int strsSize)
 {
 	int8_t	i;
