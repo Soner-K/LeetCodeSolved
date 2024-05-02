@@ -14,7 +14,7 @@ int* twoSum(int* nums, int numsSize, int target, int* returnSize) {
     if (!result)
         return (0);
     while (i < numsSize)
-    {
+    { 
         while (j < numsSize)
         {
             if (nums[i] + nums[j] == target)
