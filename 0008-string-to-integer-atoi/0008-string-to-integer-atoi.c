@@ -14,7 +14,7 @@ int myAtoi(char* s) {
 		if (*s == '-')
 			sign = -1;
 		s++;
-	}
+	} 
     while (*s && *s == '0')
         s++;
 	while (*s >= '0' && *s <= '9')
