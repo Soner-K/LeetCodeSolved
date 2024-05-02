@@ -37,4 +37,4 @@ char	*longestCommonPrefix(char **strs, int strsSize)
 		j = 0;
 	}
 	return (strs[0]);
-} 
+}
