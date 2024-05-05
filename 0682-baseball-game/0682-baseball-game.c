@@ -48,15 +48,11 @@ t_stack	*lstnew(int score)
 	return (new);
 }
 
-void	lst_push(t_stack **head, t_stack *new)
-{
-	new->next = *head;
-	(*head) = new;
-}
-
 int	calPoints(char **operations, int operationsSize)
 {
 	t_stack	*stack;
+    t_stack *tmp;
+
 	int		res;
 
 	stack = NULL;
@@ -66,19 +62,25 @@ int	calPoints(char **operations, int operationsSize)
 		if (*operations[0] == '+')
 		{
 			res = stack->score + stack->next->score;
-			lst_push(&stack, lstnew(res));
+            tmp = stack;
+            stack = lstnew(res);
+            stack->next = tmp;
 		}
 		else if (*operations[0] == 'D')
 		{
 			res = stack->score * 2;
-			lst_push(&stack, lstnew(res));
+			tmp = stack;
+            stack = lstnew(res);
+            stack->next = tmp;
 		}
 		else if (*operations[0] == 'C')
 			stack = stack->next;
 		else
 		{
 			res = tiny_atoi(*operations, *operations[0] == '-');
-			lst_push(&stack, lstnew(res));
+			tmp = stack;
+            stack = lstnew(res);
+            stack->next = tmp;
 		}
 		operations++;
 	}
