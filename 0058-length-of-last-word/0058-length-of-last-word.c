@@ -30,4 +30,4 @@ int	lengthOfLastWord(char *s)
 		}
 	}
 	return (len);
-}
+} 
