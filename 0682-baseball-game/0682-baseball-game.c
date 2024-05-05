@@ -53,7 +53,7 @@ void	lst_push(t_stack **head, t_stack *new)
 	new->next = *head;
 	(*head) = new;
 }
- 
+
 int	calPoints(char **operations, int operationsSize)
 {
 	t_stack	*stack;
