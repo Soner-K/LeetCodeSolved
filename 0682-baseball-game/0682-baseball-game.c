@@ -47,7 +47,7 @@ t_stack	*lstnew(int score)
 	new->score = score;
 	return (new);
 }
-
+ 
 int	calPoints(char **operations, int operationsSize)
 {
 	t_stack	*stack;
