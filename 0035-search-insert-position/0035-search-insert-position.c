@@ -14,4 +14,4 @@ int	searchInsert(int *nums, int numsSize, int target)
 			numsSize = (numsSize + left) / 2 - 1;
 	}
     return (left);
-}  
+}       
