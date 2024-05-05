@@ -28,4 +28,4 @@ struct ListNode	*deleteDuplicates(struct ListNode *head)
 	}
 	new->next = NULL;
 	return (first);
-}
+} 
