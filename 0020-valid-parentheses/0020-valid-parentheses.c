@@ -8,17 +8,6 @@ typedef struct s_stack
 	struct s_stack	*next;
 }				t_stack;
 
-void	lst_pop(t_stack **lst)
-{
-	t_stack	*to_del;
-
-	if (!(*lst))
-		return ;
-	to_del = *lst;
-	(*lst) = (*lst)->next;
-	free(to_del);
-}
-
 void	lst_push(t_stack **lst, t_stack *new)
 {
     if (!(*lst))
@@ -62,7 +51,7 @@ bool	isValid(char *s)
 				return (false);
 			if (stack->c == '[' & *s != ']')
 				return (false);
-			lst_pop(&stack);
+			stack = stack->next;
 			s++;
 		}
 	}
