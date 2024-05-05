@@ -25,4 +25,4 @@ int	getDecimalValue(struct ListNode *head)
 		head = head->next;
 	}
 	return (result);
-}
+} 
