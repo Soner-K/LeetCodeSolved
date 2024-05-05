@@ -28,7 +28,7 @@ t_stack	*lstnew(char c)
 	new->next = NULL;
 	return (new);
 }
-
+  
 bool	isValid(char *s)
 {
 	t_stack	*stack;
