@@ -20,7 +20,6 @@ typedef struct s_stack
 }					t_stack;
 
 
-
 short int	tiny_atoi(char *s, char is_negative)
 {
 	short int	res;
