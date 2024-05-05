@@ -25,4 +25,4 @@ int	*getConcatenation(int *nums, int numsSize, int *returnSize)
 	}
 	*returnSize = numsSize * 2;
 	return (arr);
-} 
+}
