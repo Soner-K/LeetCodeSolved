@@ -12,4 +12,4 @@ int	firstUniqChar(char *s)
             return (i);
     }
     return (-1);
-}         
+}
