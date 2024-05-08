@@ -33,4 +33,4 @@ struct ListNode* doubleIt(struct ListNode* head){
 		prev = prev->next;
 	}
 	return (head);
-}
+} 
