@@ -8,4 +8,4 @@ bool isPowerOfThree(int n) {
         n /= 3;
     }
     return (true);
-}
+} 
