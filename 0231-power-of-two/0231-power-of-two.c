@@ -11,4 +11,4 @@ bool isPowerOfTwo(int n) {
         n /= 2;
     }
     return (true);
-}  
+}   
