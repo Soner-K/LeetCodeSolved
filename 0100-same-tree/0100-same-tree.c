@@ -24,4 +24,4 @@ bool isSameTree(struct TreeNode* p, struct TreeNode* q) {
     else
         return (false);
     return(sameTree == 1 ? true : false);
-}    
+}
