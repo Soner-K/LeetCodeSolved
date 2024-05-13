@@ -5,7 +5,7 @@ bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target) 
 
     while (med < matrixSize)
     {
-        if (matrix[med][0] <= target && matrix[med][matrixColSize[med] - 1] >= target)
+        if (matrix[med][matrixColSize[med] - 1] >= target)
             break ;
         else
             med++;
@@ -25,6 +25,4 @@ bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target) 
             left = med + 1;
     }
     return (false);
-}
-
-
+}  
