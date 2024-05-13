@@ -30,4 +30,4 @@ bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target) 
             left = med + 1;
     }
     return (false);
-}
+}               
