@@ -1,5 +1,5 @@
 bool searchMatrix(int** matrix, int matrixSize, int* matrixColSize, int target) {
-    short int   med = 0;
+    int8_t      med = 0;
     uint8_t     row = 0;
     uint8_t     left = 0;
 
