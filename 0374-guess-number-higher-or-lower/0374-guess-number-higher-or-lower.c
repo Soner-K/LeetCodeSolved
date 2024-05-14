@@ -24,6 +24,4 @@ int guessNumber(int n){
             right = n - 1;
     }
     return (n);
-}   
-
-
+}
