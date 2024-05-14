@@ -10,19 +10,17 @@ struct ListNode* doubleIt(struct ListNode* head){
 		prev->val = 1;
 		prev->next = head;
 		head = prev;
-        prev = head->next;
-        itr = head->next->next;
+        	prev = head->next;
+        	itr = head->next->next;
 	}
-    else
-    {
+	else
+	{
 	    prev = head;
-        itr = head->next;
-    }
-    prev->val = (prev->val * 2) % 10;
-    if (!itr)
-    {
-        return (head);
-    }
+	    itr = head->next;
+	}
+	prev->val = (prev->val * 2) % 10;
+	if (!itr)
+		return (head);
 	while (itr)
 	{
 		itr->val *= 2;
