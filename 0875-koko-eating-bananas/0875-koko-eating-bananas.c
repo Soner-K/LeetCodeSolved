@@ -16,7 +16,7 @@ int8_t  check(int *piles, int pilesSize, int k, int h)
 int minEatingSpeed(int* piles, int pilesSize, int h) {
     int k = 0;
     int left = 1;
-    int right = 0;
+    int right;
     for (short int i; i < pilesSize; i++)
     {
         if (piles[i] > k)
