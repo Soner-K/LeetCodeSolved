@@ -34,4 +34,4 @@ int minEatingSpeed(int* piles, int pilesSize, int h) {
             left = k + 1;
     }
     return (check(piles, pilesSize, k, h) == true ? k : k + 1);
-}
+}   
