@@ -13,7 +13,6 @@
 bool evaluateTree(struct TreeNode* root) {
     if (!root)
         return (false);
-
     if (root->val == true)
         return (true);
     else if (root->val == false)
@@ -23,4 +22,4 @@ bool evaluateTree(struct TreeNode* root) {
     else
         return (evaluateTree(root->right) && evaluateTree(root->left));
     return (false);
-}
+}    
