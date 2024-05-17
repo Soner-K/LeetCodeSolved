@@ -23,3 +23,7 @@ bool evaluateTree(struct TreeNode* root) {
         return (evaluateTree(root->right) && evaluateTree(root->left));
     return (false);
 }
+
+
+
+
